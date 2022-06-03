@@ -1,13 +1,19 @@
 import React, { useEffect, useState, useLayoutEffect } from 'react';
-import { View, Text, StyleSheet, SafeAreaView, Image, ScrollView, TouchableOpacity, Share, Modal } from 'react-native';
+import {
+    Text,
+    StyleSheet,
+    SafeAreaView,
+    Image,
+    ScrollView,
+    TouchableOpacity,
+    Share,
+    Modal
+} from 'react-native';
 import api from '../../services/api';
 import { Feather, Entypo } from '@expo/vector-icons';
 
 import { useNavigation, useRoute } from '@react-navigation/native';
 import LinkWeb from '../../components/LinkWeb';
-import WebView from 'react-native-webview';
-
-
 
 export default function Detail() {
     const route = useRoute();
@@ -70,7 +76,6 @@ export default function Detail() {
         setOpenLink(link);
     }
 
-    console.log(openLink);
 
     return (
         <SafeAreaView style={styles.container}>

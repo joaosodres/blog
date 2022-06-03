@@ -5,8 +5,6 @@ import { Feather } from '@expo/vector-icons';
 import { WebView } from 'react-native-webview';
 
 export default function LinkWeb({ link, title, closeModal }) {
-
-
     return (
         <>
             <TouchableOpacity
